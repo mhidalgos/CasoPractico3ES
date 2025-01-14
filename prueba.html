@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Gestión de Artículos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<!-- Encabezado de la página -->
+<header>
+    <h1 id="titulo">Sistema de administración de artículos</h1>  
+</header>
+<body>
+    <div class="container">
+        <h2>Búsqueda</h2>
+        <form action="procesar.php" method="POST">
+            <label for="categoria">Categoría:</label>
+            <select name="categoria" id="categoria">
+                <option value="">Todas</option>
+                <option value="tecnologia">Tecnología</option>
+                <option value="ciencia">Ciencia</option>
+                <option value="arte">Arte</option>
+            </select>
+            <br><br>
+            <label for="palabra_clave">Palabra Clave:</label>
+            <input type="text" name="palabra_clave" id="palabra_clave">
+            <br><br>
+            <label for="fecha">Fecha:</label>
+            <input type="date" name="fecha" id="fecha">
+            <br><br>
+            <button type="submit">Buscar</button>
+        </form>
+    </div>
+</body>
+<!-- Pie de página -->
+    <footer>
+        <p>© 2024. Todos los derechos reservados</p>
+    </footer>
+</html>
